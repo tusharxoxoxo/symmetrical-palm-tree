@@ -135,6 +135,18 @@ font-size: 25px;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 Unicode', Geneva, Verdana, sans-serif;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 2. Develop and demonstrate a XHTML document that illustrates the use of
 internal style sheet, unordered list, table, borders, padding, color, and the
 tag.
@@ -206,6 +218,16 @@ border: 1px solid #CCCCCC;
 </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
 3. Develop and demonstrate a XHTML file that includes Javascript for the
 following problems:
 a. Input: A number n obtained using prompt
@@ -270,6 +292,16 @@ alert("No input");
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
 4. Develop and demonstrate a XHTML file that includes Javascript script that
 uses functions for the following problems:
 a. Parameter: A string
@@ -311,6 +343,23 @@ alert("No vowel found in the entered string");
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 5. Develop and demonstrate, using JavaScript, a XHTML document that collects
 the USN (the valid format is: A digit from 1 to 4 followed by two upper-case
 characters followed by two digits followed by two upper-case characters
@@ -347,6 +396,20 @@ Enter USN in Upper Case(DAADDAADDD):<input id=usn type=text><br>
 </form>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 6.
 a. Design an XML document to store information about a student in an
 engineering college. The information must include USN, Name, Name of the
@@ -439,6 +502,24 @@ Joining</th><th>Email-ID</th>
 </html>
 </xsl:template>
 </xsl:stylesheet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 8.
 a. Write a PHP program to display various Server Information like Server Name,
 Server Software, Server protocol, CGI Revision etc.
@@ -472,6 +553,17 @@ echo "Largest number among $x, $y and $z is: $max\n";
 largest(100, 50, 25);
 largest(50, 50, 25);
 ?>
+
+
+
+
+
+
+
+
+
+
+
 9.
 a. Write a PHP program to accept the User Name and display a greeting
 message randomly chosen from a list of 4 greeting messages.
@@ -504,6 +596,19 @@ $c = file_get_contents($file) ;
 file_put_contents($file, $c+1);
 echo "The number of users visited : ".$c ;
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
 10.
 a. Write a PHP program to store current date-time in a COOKIE and display the
 ‘Last visited on’ date-time on the web page upon reopening of the same page
@@ -539,6 +644,18 @@ else
 $_SESSION['views']=1;
 echo"views = ".$_SESSION['views'];
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
 11. Create the form below using an HTML. User should click on the Submit
 button after entering first name and last name in the respective text boxes. The
 text entered must be sent via the "GET" method. Write a PHP code to display
@@ -578,6 +695,19 @@ echo "Welcome ".$fir." ".$las;
 ?>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
 12. Create the form below using an HTML. User should click on the Register
 button after entering the details like Name, USN, E-mail id in the respective text
 boxes. The entered details must be sent via the "POST" method. Write a PHP
