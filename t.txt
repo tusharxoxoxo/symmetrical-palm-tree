@@ -1,0 +1,631 @@
+1. Develop and demonstrate a XHTML document that illustrates the use
+external style sheet, ordered list, table, borders, padding, colour, and the
+<span> tag.
+=>
+P1.html:-
+<!DOCTYPE html>
+<head>
+<title> A Styled Table </title>
+<link rel="stylesheet" href="a.css" />
+</head>
+<body class="bt">
+<table border="border">
+<p id= "qt"> The Department of Information Science & Engineering </p>
+<p id="rt" ><span class ="sp">
+TIME TABLE</span> for 6th Semester using HTML and CSS with an External style sheet
+</p>
+<!-- This is a comment-->
+<tr>
+<th id="qt"> Days</th>
+<th id="qt"> 8:00-9:00 </th>
+<th id="qt"> 9:00-10:00 </th>
+<th id="qt"> 10:00-11:00 </th>
+<th id="qt"> 11:00-11:30 </th>
+<th id="qt"> 11:30-12:30 </th>
+<th id="qt"> 12:30-1:30 </th>
+<th id="qt"> 1:30-2:30 </th>
+<th id="qt"> 2:30-3:30 </th>
+<th id="qt"> 3:30-4:30 </th>
+<th id="qt"> 4:30-5:30 </th>
+</tr>
+<tr>
+<th class="ct pt"> Monday </th>
+<td class = "bgc"> &nbsp; </td>
+<td class = "bgc"> &nbsp; </td>
+<td class = "bgc"> &nbsp; </td>
+<td rowspan="5" class="nbt"><b>B<br>R<br>E<br>A<br>K</b></td>
+<td class="wt">SA</td>
+<td class="wt">WT</td>
+<td rowspan="5" class="nbt"><b>B<br>R<br>E<br>A<br>K</b></td>
+<td class="wt">CN</td>
+<td class="wt">CNS</td>
+<td class = "bgc"> &nbsp; </td>
+</tr>
+<tr>
+<th class="ct pt"> Tuesday </th>
+<td class="lt" colspan="3">WT LAB</td>
+<td class = "wt"> EE </td>
+<td class = "wt"> SA </td>
+<td class = "bgc" colspan="3"><b>Activity</b></td>
+</tr>
+<tr>
+<th class="ct pt"> Wednesday </th>
+<td class = "bgc" colspan="3"><b>Activity</b></td>
+<td class = "wt"> CNS </td>
+<td class = "wt"> SA </td>
+<td class = "wt"> WT <sub>106</sub> </td>
+<td class = "wt"> IML <sub>106</sub> </td>
+<td class = "bgc"> &nbsp; </td>
+</tr>
+<tr>
+<th class ="ct pt"> Thursday </th>
+<td class="lt" colspan="3">CN LAB</td>
+<td class = "wt"> IML </td>
+<td class = "wt"> EE </td>
+<td class = "wt"> CNS </td>
+<td class = "wt"> CN </td>
+<td class = "bgc"> &nbsp; </td>
+</tr>
+<tr>
+<th class ="ct pt"> Friday </th>
+<td class = "bgc"> &nbsp; </td>
+<td class = "lt" colspan="2"> CNS LAB </td>
+<td class = "wt"> WT </td>
+<td class = "wt"> CN </td>
+<td class = "wt"> IML </td>
+<td class = "wt"> EE </td>
+<td class = "bgc"> &nbsp; </td>
+</tr>
+</table>
+<p class="sp">Test/Internals</p>
+<ol>
+<li><span class ="sp">TEST 1</span> :- 30/03/23 to 01/04/23</li>
+<li><span class ="sp">TEST 2</span> :- 22/05/23 to 24/05/23</li>
+</ol>
+</body>
+</html>
+a.css:-
+.bt {
+background-color: #FDEDEC;
+}
+#qt {
+background-color: navajowhite;
+font-size: 19px;
+font-weight: bold;
+}
+#rt {
+background-color: lightblue;
+align: center;
+}
+.pt {
+padding: 25px 45px 25px 15px;
+border: 1px solid black;
+}
+.sp {
+text-decoration: underline;
+font-size: 17px;
+color: red;
+font-weight: bold;
+align: center;
+background-color: lightblue;
+}
+.wt {
+font-size: 15px;
+padding: 25px 45px 25px 15px;
+color: blue;
+}
+.ct {
+font-family: 'Times New Roman';
+font-style: italic;
+color: red;
+}
+.bgc {
+background-color: gray;
+align: center;
+font-size: 30px;
+}
+.lt {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-style: oblique;
+color: orchid;
+font-size: 25px;
+}
+.nbt {
+font-size: 25px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
+Unicode', Geneva, Verdana, sans-serif;
+}
+2. Develop and demonstrate a XHTML document that illustrates the use of
+internal style sheet, unordered list, table, borders, padding, color, and the
+tag.
+=>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Style Sheet Example</title>
+<style type="text/css">
+/* Internal Style Sheet */
+body {
+font-family: Arial, sans-serif;
+background-color: #F5F5F5;
+}
+h1 {
+color: #333333;
+text-align: center;
+}
+ul {
+list-style-type: none;
+padding: 0;
+}
+table {
+border-collapse: collapse;
+width: 100%;
+}
+th, td {
+border: 1px solid #333333;
+padding: 8px;
+}
+th {
+background-color: #333333;
+color: #FFFFFF;
+}
+.container {
+width: 600px;
+margin: 0 auto;
+background-color: #FFFFFF;
+padding: 20px;
+border: 1px solid #CCCCCC;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Internal Style Sheet Example</h1>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul>
+<table>
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>City</th>
+</tr>
+<tr>
+<td>John Doe</td>
+<td>30</td>
+<td>New York</td>
+</tr>
+<tr>
+<td>Jane Smith</td>
+<td>25</td>
+<td>London</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+3. Develop and demonstrate a XHTML file that includes Javascript for the
+following problems:
+a. Input: A number n obtained using prompt
+Output: The first n Fibonacci numbers
+b. Input: A number n obtained using prompt
+Output: A table of numbers from 1 to n and their squares using
+alert.
+=>
+2a.html:-
+<html>
+<body>
+<script type="text/javascript">
+//initialize variables
+var fib1=0,fib2=1,fib=0;
+var n=prompt("enter a number");
+if(n!=null && n>0)
+{
+document.write("<h1>First " + n + " fibonacci numbers are: </h1><br>");
+//if input is one number
+if(n==1)
+document.write("<h1>" + fib1 + "</h1><br>");
+//if input is two numbers
+else
+document.write("<h1>" + fib1 + "</h1><br><h1>" + fib2 + "</h1><br>");
+//if input is more than two numbers, find the next Fibonacci number
+for(i=3;i<=n;i++)
+{
+fib=fib1+fib2;
+document.write("<h1>" + fib + "</h1><br>");
+fib1=fib2;
+fib2=fib;
+}
+}
+else
+alert("No proper input");
+</script>
+</body>
+</html>
+2b.html:-
+<html>
+<body>
+<script type="text/javascript">
+//input
+var n=prompt("enter a number");
+if(n!=null && n>0)
+{
+var i=0;
+document.write("<h2>The first " + n + " numbers and their squares are:
+</h2>");
+//display in a table
+document.write("
+<table border=1><tr>
+<th><b>Number</b></th>
+<th><b>Square</b></th>
+</tr><br>");
+for(i=1;i<=n;i++)
+document.write("<tr><td>" + i + "</td><td>" + i*i + "</td></tr><br>");
+document.write("</table>");
+}
+else
+alert("No input");
+</script>
+</body>
+</html>
+4. Develop and demonstrate a XHTML file that includes Javascript script that
+uses functions for the following problems:
+a. Parameter: A string
+Output: The position in the string of the left-most vowel
+b. Parameter: A number
+Output: The number with its digits in the reverse order
+=>
+3ab.html:-
+<!DOCTYPE HTML>
+<html>
+<body>
+<script type="text/javascript">
+var str = prompt("Enter the Input","");
+if(!(isNaN(str)))
+{
+var num,rev=0,remainder;
+num = parseInt(str);
+while(num!=0)
+{
+remainder = num%10;
+num = parseInt(num/10);
+rev = rev * 10 + remainder;
+}
+alert("Reverse of "+str+" is "+rev);
+}
+else
+{
+str = str.toUpperCase();
+for(var i = 0; i < str.length; i++)
+{
+var chr = str.charAt(i);
+if(chr == 'A' || chr == 'E' || chr == 'I' || chr == 'O' || chr == 'U')break;
+}
+if( i < str.length )
+alert("The position of the left most vowel is "+(i+1));
+else
+alert("No vowel found in the entered string");
+}
+</script>
+</body>
+</html>
+5. Develop and demonstrate, using JavaScript, a XHTML document that collects
+the USN (the valid format is: A digit from 1 to 4 followed by two upper-case
+characters followed by two digits followed by two upper-case characters
+followed by three digits; no embedded spaces allowed) of the user. Event
+handler must be included for the form element that collects this information to
+validate the input. Messages in the alert windows must be produced when
+errors are detected.
+=>
+P4.html:-
+<html>
+<body>
+<script type="text/javascript">
+finder=function()
+{
+//get input
+var a=document.getElementById('usn').value;
+//find the length of the input 'a'
+if(a.length==0)
+{
+alert("USN is empty");
+return;
+}
+var b=a.toLowerCase();
+var str=b.search(/^[1-4][a-z][a-z][0-9][0-9][a-z][a-z][0-9][0-9][0-9]/);
+if(str==0)
+alert("usn is valid");
+else
+alert("usn is invalid");
+}
+</script>
+<form onsubmit=finder()>
+Enter USN in Upper Case(DAADDAADDD):<input id=usn type=text><br>
+<input type=submit value=submit>
+</form>
+</body>
+</html>
+6.
+a. Design an XML document to store information about a student in an
+engineering college. The information must include USN, Name, Name of the
+College, Brach, Year of Joining, and e-mail id. Make up sample data for 3
+students. Create a CSS style sheet and use it to display the document.
+b. Create an XSLT style sheet for one student element of the above document
+and use it to create a display of that element.
+=>
+5a.xml:-
+<?xml version="1.0" ?>
+<!-- Obtain stylesheet. Note that the xml file & css file should be in the same
+directory/location -->
+<?xml-stylesheet type="text/css" href="4a.css" ?>
+<student>
+Student 1 details:
+<info>
+USN:<usn>1AB10EC002</usn>
+Name:<name>abc</name>
+College:<coll>AB</coll>
+Branch:<branch>ECE</branch>
+Year Of Joining:<yoj>2010</yoj>
+Email-ID:<email>abc@samp.com</email>
+</info>
+Student 2 details:
+<info>
+USN:<usn>1PQ10CS025</usn>
+Name:<name>pqr</name>
+College:<coll>PQ</coll>
+Branch:<branch>CSE</branch>
+Year Of Joining:<yoj>2010</yoj>
+Email-ID:<email>pqr@samp.com</email>
+</info>
+Student 3 details:
+<info>
+USN:<usn>1XY10IS005</usn>
+Name:<name>xyz</name>
+College:<coll>XY</coll>
+Branch:<branch>ISE</branch>
+Year Of Joining:<yoj>2010</yoj>
+Email-ID:<email>xyz@samp.com</email>
+</info>
+</student>
+5a.css:-
+student {margin-top:15px;font-weight:bold;color:black;}
+info {display:block;margin-left:15px;color:gray;}
+usn, name {color:red;font-size:15pt;}
+coll, branch {color:blue;font-size:15pt;}
+yoj, email {color:green;font-size:15pt;}
+5b.xml:-
+<?xml version="1.0" ?>
+<!-- Obtain stylesheet. Note that the xml file & xsl file should be in the same
+directory/location -->
+<?xml-stylesheet type="text/xsl" href="4b.xsl" ?>
+<student>
+<info>
+<usn>1PQ10CS025</usn>
+<name>pqr</name>
+<coll>PQ</coll>
+<branch>CSE</branch>
+<yoj>2010</yoj>
+<email>pqr@samp.com</email>
+</info>
+</student>
+5b.xslt:-
+<?xml version="1.0"?>
+<!-- create new namespace instance -->
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<!-- match all -->
+<xsl:template match="/student">
+<html>
+<!-- create table to display -->
+<table border="1">
+<tr>
+<th>USN</th><th>Name</th><th>College</th><th>Branch</th><th>Year Of
+Joining</th><th>Email-ID</th>
+</tr>
+<xsl:for-each select="info">
+<tr>
+<!-- get each value -->
+<td><xsl:value-of select="usn" /></td>
+<td><xsl:value-of select="name" /></td>
+<td><xsl:value-of select="coll" /></td>
+<td><xsl:value-of select="branch" /></td>
+<td><xsl:value-of select="yoj" /></td>
+<td><xsl:value-of select="email" /></td>
+</tr>
+</xsl:for-each>
+</table>
+</html>
+</xsl:template>
+</xsl:stylesheet>
+8.
+a. Write a PHP program to display various Server Information like Server Name,
+Server Software, Server protocol, CGI Revision etc.
+=>
+<?php
+echo $_SERVER['PHP_SELF'];
+echo "<br>";
+echo $_SERVER['SERVER_NAME'];
+echo "<br>";
+echo $_SERVER['SERVER_SOFTWARE'];
+echo "<br>";
+echo $_SERVER['SERVER_PROTOCOL'];
+echo "<br>";
+echo $_SERVER['GATEWAY_INTERFACE'];
+echo "<br>";
+?>
+b. Write a PHP Program to accept three no.s from command prompt and find
+the largest number using functions.
+=>
+<?php
+function largest($x, $y, $z) {
+$max = $x;
+if ($x >= $y && $x >= $z)
+$max = $x;
+elseif ($y >= $x && $y >= $z)
+$max = $y;
+else
+$max = $z;
+echo "Largest number among $x, $y and $z is: $max\n";
+}
+largest(100, 50, 25);
+largest(50, 50, 25);
+?>
+9.
+a. Write a PHP program to accept the User Name and display a greeting
+message randomly chosen from a list of 4 greeting messages.
+=>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<form method='POST'>
+<h2>Please input your name : </h2>
+<input type = "text" name="n">
+<input type = "submit" value="Submit Name">
+</form>
+<?php
+$name = $_POST["n"];
+$arr = array("Hello","Hi","Welcome","Hey");
+$rand_index = array_rand($arr);
+echo "<h3>".$arr[$rand_index]." ".$name."</h3>";
+?>
+</body>
+</html>
+b. b. Write a PHP program to keep track of the number of visitors visiting the
+web page and to display this count of visitors, with proper headings.
+=>
+<?php
+echo "<h1> REFRESH PAGE </h1>" ;
+$file = 'count.txt' ;
+$c = file_get_contents($file) ;
+file_put_contents($file, $c+1);
+echo "The number of users visited : ".$c ;
+?>
+10.
+a. Write a PHP program to store current date-time in a COOKIE and display the
+‘Last visited on’ date-time on the web page upon reopening of the same page
+=>
+<html>
+<body bgcolor="87ceeb">
+<center><h2> Last visited time on the web page</h2></center>
+<br>
+<?php
+//date_default_timezone_set('Asia/Calcutta'); - You can choose any timezone
+//Calculate 60 days in the future
+//seconds * minutes * hours * days + current time
+$inTwoMonths = 60 * 60 * 24 * 60 + time();
+setcookie('lastVisit', date("G:i - m/d/y"), $inTwoMonths);
+if(isset($_COOKIE['lastVisit']))
+{
+$visit = $_COOKIE['lastVisit'];
+echo "Your last visit was - ". $visit;
+}
+else
+echo "You've got some stale cookies!";
+?>
+</body>
+</html>
+b. Write a PHP program to store page views count in SESSION, to increment
+the count on each refresh, and to show the count on web page.
+=>
+<?php
+session_start();
+if(isset($_SESSION['views']))
+$_SESSION['views'] = $_SESSION['views']+1;
+else
+$_SESSION['views']=1;
+echo"views = ".$_SESSION['views'];
+?>
+11. Create the form below using an HTML. User should click on the Submit
+button after entering first name and last name in the respective text boxes. The
+text entered must be sent via the "GET" method. Write a PHP code to display
+“Welcome” message with the First Name and Last Name received.
+=>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div
+{
+background-color: lightskyblue;
+width: 300px;
+border: 1px solid black;
+padding: 10px;
+margin: 20px;
+}
+</style>
+</head>
+<body>
+<form method="GET">
+<div>
+<label for="fname">Enter your First name:</label>
+<input type="text" id="fname" name="fname" style="border-width:3px; border-
+style:solid; border-color:green;"><br><br>
+<label for="lname">Enter your Last name:</label>
+<input type="text" id="lname" name="lname" style="border-width:3px; border-
+style:solid; border-color:green;"><br><br>
+<input type="submit" value="Submit" style="border-width:3px; border-style:solid;
+border-color:green;">
+</div>
+</form>
+<?php
+$fir = $_GET['fname'];
+$las = $_GET['lname'];
+echo "Welcome ".$fir." ".$las;
+?>
+</body>
+</html>
+12. Create the form below using an HTML. User should click on the Register
+button after entering the details like Name, USN, E-mail id in the respective text
+boxes. The entered details must be sent via the "POST" method. Write a PHP
+code to display “Successfully registered” message with the Name and USN
+received.
+=>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div
+{
+background-color: lightskyblue;
+width: 300px;
+border: 1px solid black;
+padding: 10px;
+margin: 20px;
+}
+</style>
+</head>
+<body>
+<form method="POST">
+<div>
+<table>
+<tr>
+<td><label for="name">Name:</label></td>
+<td><input type="text" id="name" name="name" style="border-width:3px;
+border-style:solid; border-color:green;"></td>
+</tr>
+<tr>
+<td><label for="usn">USN:</label></td>
+<td><input type="text" id="usn" name="usn" style="border-width:3px; border-
+style:solid; border-color:green;"></td>
+</tr>
+<tr>
+<td><label for="email">E-mail id:</label></td>
+<td><input type="text" id="email" name="email" style="border-width:3px; border-
+style:solid; border-color:green;"></td>
+</tr>
+</table>
+<input type="submit" value="Register" style="border-width:3px; border-style:solid;
+border-color:green;">
+</div>
+</form>
+<?php
+$na = $_POST['name'];
+$no = $_POST['usn'];
+echo "Successful registered for"."<br>Name -> ".$na."<br>USN -> ".$no;
+?>
+</body>
+</html>
