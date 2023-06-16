@@ -1,8 +1,10 @@
 # symmetrical-palm-tree
 
 • A real-time high-fidelity chat application (YT link) in Rust using the Rocket framework
+
 • Create using tokio and serde, a bounded, multi-producer, multi-consumer
 channel, where each sent value is broadcast to all active receivers.
+
 • Was able to handle up to 10,000 concurrent requests per second on a single machine.
 
 ![Screenshot 2022-09-19 at 10 35 56](https://user-images.githubusercontent.com/79051850/191898042-c567d276-4a33-416e-ad2b-915ea6dd9035.jpg)
