@@ -1,6 +1,9 @@
 # symmetrical-palm-tree
 
-The Symmetrical-Palm-Tree project is a real-time chat application developed in Rust language using the Rocket framework. The project uses the tokio library to implement a multi-producer, multi-consumer channel that broadcasts sent values to all active receivers. The chat application aims to provide a high-performance, real-time communication solution for users, and leverages the simplicity and efficiency of the Rust programming language and the Rocket framework. The Symmetrical-Palm-Tree project is focused on delivering a high-quality, scalable, and robust chat application to its users.
+• A real-time high-fidelity chat application (YT link) in Rust using the Rocket framework
+• Create using tokio and serde, a bounded, multi-producer, multi-consumer
+channel, where each sent value is broadcast to all active receivers.
+• Was able to handle up to 10,000 concurrent requests per second on a single machine.
 
 ![Screenshot 2022-09-19 at 10 35 56](https://user-images.githubusercontent.com/79051850/191898042-c567d276-4a33-416e-ad2b-915ea6dd9035.jpg)
 ![Screenshot 2022-09-19 at 10 36 01](https://user-images.githubusercontent.com/79051850/191898045-873e0329-f0e0-483d-a253-1d087ff84eb9.jpg)
